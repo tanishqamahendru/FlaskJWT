@@ -6,7 +6,7 @@ from flask_jwt import JWT, jwt_required, current_identity
 
 #configuring your application
 app = Flask(__name__)
-app.secret_key = 'jose'
+app.secret_key = 'secretKeyShouldBeSecret' #This key should be hidden in real projects
 
 #Creating our Api
 api = Api(app)
